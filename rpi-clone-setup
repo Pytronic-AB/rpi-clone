@@ -127,4 +127,16 @@ echo -e "$LINE\n"
 # Add more customizations if needed.
 #
 
+##
+# Edit /home/homecore/homecore-backend/homecore.cfg
+#
+cd $clone/home/homecore/homecore-backend
+sed -i s/"$HOSTNAME"/"$newhost"/g homecore.cfg
+#
+# Read it back to verify.
+#
+echo "$clone/home/homecore/homecore-backend/homecore.cfg - set new hostname \"$newhost\" in lines: "
+LINE=$(grep $newhost homecore.cfg)
+echo -e "$LINE\n"
+
 exit 0
