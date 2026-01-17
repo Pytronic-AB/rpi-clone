@@ -25,7 +25,7 @@
 #    Test new scripting by running:  rpi-clone-setup -t newhostname
 #
 
-file_list="etc/hostname etc/hosts"
+file_list="etc/hostname etc/hosts home/homecore/homecore-backend"
 
 clone=/mnt/clone
 clone_test=/tmp/clone-test
